@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曼谷行程規劃</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-title {
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+            color: #007bff;
+        }
+        /* 地圖容器樣式 */
+        #map {
+            height: 400px; /* 設定地圖高度 */
+            width: 100%;
+            border-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container">
+        <!-- 標題區塊 -->
+        <header class="text-center py-8 bg-white rounded-xl shadow-md mb-8">
+            <h1 class="text-5xl font-extrabold text-blue-800 mb-4">曼谷深度之旅</h1>
+            <p class="text-xl text-gray-600">您的專屬行程規劃</p>
+        </header>
+
+        <!-- 導覽列 -->
+        <nav class="mb-8 p-4 bg-blue-700 text-white rounded-xl shadow-lg flex justify-around">
+            <a href="#day8" class="nav-link text-lg font-semibold hover:text-blue-200">Day 8</a>
+            <a href="#day9" class="nav-link text-lg font-semibold hover:text-blue-200">Day 9</a>
+            <a href="#day10" class="nav-link text-lg font-semibold hover:text-blue-200">Day 10</a>
+        </nav>
+
+        <!-- Day 8 行程 -->
+        <section id="day8" class="card">
+            <h2 class="text-3xl font-bold text-blue-700 section-title">Day 8: 8/22 (Fri)</h2>
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">行程重點</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>Saneh Jaan（米其林一星泰式料理）</li>
+                    <li>大皇宮周邊文化走訪</li>
+                    <li>Asiatique碼頭夜市</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">上午</h3>
+                <p class="text-gray-700 leading-relaxed">飯店泳池放鬆。</p>
+                <h4 class="text-xl font-medium text-gray-700 mt-4 mb-1">早餐推薦</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>Café Tartine</li>
+                    <li>BAAN LANGSUAN</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">午餐</h3>
+                <h4 class="text-xl font-medium text-gray-700 mb-1">Saneh Jaan（米其林一星泰式料理）</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    平日午餐有雙人2100套餐。<br>
+                    <strong>位置：</strong>Wireless Road，靠近 BTS Chit Lom。<br>
+                    <strong>交通建議：</strong>搭船至 Sathorn Pier → BTS Chit Lom 站 → 步行至餐廳。<br>
+                    <strong>菜色建議：</strong>炸魚餅、綠咖哩、甜點椰子布丁。<br>
+                    
+                </p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">下午：大皇宮、玉佛寺、臥佛寺文化走訪</h3>
+                <p class="text-gray-700 leading-relaxed mb-2">
+                    <strong>建議穿著：</strong>不露膝/肩的衣服（入寺廟規定）。
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-2">
+                    在沙吞碼頭轉乘昭披耶河快船，前往以下景點：
+                </p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-2">
+                    <li>大皇宮（Grand Palace）</li>
+                    <li>臥佛寺（Wat Pho）</li>
+                    <li>鄭王廟（Wat Arun）</li>
+                </ul>
+                <h4 class="text-xl font-medium text-gray-700 mt-4 mb-1">河畔咖啡廳推薦</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    <strong>Hong Sieng Kong：</strong>迷人的百年老宅河畔咖啡廳，半開放式的廢墟風格，假日還有Live演奏；可以坐在河畔邊喝咖啡等日落。
+                </p>
+                <h4 class="text-xl font-medium text-gray-700 mt-4 mb-1">昭披耶河觀光船 (Chao Phraya Tourist Boat)</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>經營的藍色觀光船，是一艘大型的雙層渡輪，第一層為室內座位區，頂層則是露天觀光座位區。</li>
+                    <li>All Day River Pass 一日票：150 泰銖/人（當日可無限次搭乘）</li>
+                    <li>Single Ticket 單程票：40 泰銖/人</li>
+                    <li><strong>購票建議：</strong>如果當日只有要前往一個碼頭（景點）的話，只要購買「單程票」即可；但如果預計會去到兩個以上的碼頭，就會建議直接購買「All Day River Pass 一日票」，因為一日票可以購票當日無限次上下船搭乘，這樣會比單程票划算且方便許多。</li>
+                    <li><strong>交通：</strong>BTS 線至 Saphan Taksin 站出 2 號出口，出站往前直走就是 Sathorn 中央碼頭。從捷運BTS Saphan Taksin站走到碼頭這裡不用5分鐘路程。</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">晚上：Asiatique The Riverfront 碼頭夜市</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-2">
+                    <li><strong>交通：</strong>Asiatique河濱夜市有專門的免費接駁船可以搭；BTS捷運至Saphan Taksin站，然後轉乘免費接駁船。從BTS站2號出口出來後，步行至Sathorn碼頭，在那裡可以搭乘Asiatique的接駁船，大約10-15分鐘即可到達夜市。</li>
+                    <li><strong>接駁船服務時間：</strong>通常是下午5點到晚上11點，每半小時一班，但建議提前查詢當天最新的船班時間。</li>
+                    <li><strong>夜市特色：：</strong>有摩天輪、雜貨、河畔餐廳與甜點店（推薦：After You、烤香蕉）。</li>
+                    <li><strong>分區介紹：</strong>
+                        <ul class="list-circle list-inside ml-4">
+                            <li>1~4區：名產店、曼谷包、有的沒的個人小店 (可以殺價)</li>
+                            <li>5~6區：活動廣場(神秘屋、人妖秀)、各國美食街</li>
+                            <li>7~10區：比較中大型的衣服、包包、飾品賣店</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">SPA 推薦</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>Let's Relax : 曼谷 Icon Charoen Nakhon</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">住宿</h3>
+                <p class="text-gray-700 leading-relaxed">Sindhorn Midtown Hotel Bangkok, Vignette Collection, an IHG Hotel</p>
+            </div>
+        </section>
+
+        <!-- Day 9 行程 -->
+        <section id="day9" class="card">
+            <h2 class="text-3xl font-bold text-blue-700 section-title">Day 9: 8/23 (Sat)</h2>
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">行程重點</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>Or Tor Kor 菜市場吃早餐</li>
+                    <li>Chatuchak週末市集</li>
+                    <li>石龍軍路文化探索</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">上午：Or Tor Kor 菜市場 早餐</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li><strong>交通：</strong>綠線 Saphan Khwai BTS Station。</li>
+                    <li>Royal Project 有很多皇家計畫的伴手禮可以買。</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">中午下午：Chatuchak Weekend Market（恰圖恰週末市集）</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-2">
+                    <li><strong>交通建議：：</strong>搭 BTS 至 Mo Chit 站，出口後步行 3 分鐘進市集；或搭 MRT 到 Kamphaeng Phet ，從 2 號出口上來。</li>
+                    <li><strong>營業時間：</strong>週末 09:00 – 18:00。</li>
+                    <li><strong>建議逛區：</strong>Section 2-4 區，找到 MAG 招牌後走進旁邊巷子就到了。這區比較涼爽不用一直曝曬，賣的東西有質感、店家的種類多。</li>
+                    <li><strong>可逛內容：</strong>文創手作、寵物用品、泰式點心（椰奶冰、椰子汁、炸雞等）。</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">傍晚：曼谷民俗博物館 Bangkokian Museum、石龍軍路</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-2">
+                    <li><strong>交通：</strong>從洽圖洽坐計程車前往曼谷民俗博物館。</li>
+                    <li><strong>曼谷民俗博物館：</strong>
+                        <ul class="list-circle list-inside ml-4">
+                            <li>門票：免費參觀。</li>
+                            <li>開放時間：AM09：00－PM16：00 （星期一休）。</li>
+                        </ul>
+                    </li>
+                    <li><strong>石龍軍路 (Thanon Charoen Krung)：</strong>泰國的第一條現代化馬路，由泰皇拉瑪四世於 1864 年修建完成，並在兩側建造商鋪出租給洋人和華商，促進了泰國國際商業的發展。有別於泰式風情的大皇宮區、中式意味濃厚的中國城，石龍軍路上則更顯多元，有著東西方在此交會的歷史刻痕。</li>
+                </ul>
+                <h4 class="text-xl font-medium text-gray-700 mt-4 mb-1">石龍軍路美食推薦</h4>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li><strong>ภูธร บาร์烤麵包：</strong>10200泰國 Krung Thep Maha Nakhon, Phra Nakhon, Bangkok, Phraeng Phuthon Rd 17:00~23:00。</li>
+                    <li><strong>朱拉50巷廚房：：</strong>07:00~19:00 咖哩蟹肉蛋。</li>
+                    <li><strong>Prachak Roast Duck（百年烤鴨店）：：</strong>烤鴨飯是招牌，也有燒臘三寶飯，價格實惠，搭配酸甜醬汁極具特色。</li>
+                    <li><strong>Sarnies Bangkok（咖啡與創意輕食）：：</strong>改建老倉庫的咖啡廳，融合咖啡、早午餐與烘焙，拿鐵與肉桂捲非常推薦，氣氛放鬆適合長坐。</li>
+                    <li><strong>甜品選擇：</strong>泰式椰奶糯米糕、摩摩喳喳。</li>
+                    <li><strong>Thip Samai Pad Thai（石龍軍路延伸區）：：</strong>曼谷最著名的炒河粉店之一，推薦：超厚蝦 Pad Thai + 橙汁。建議傍晚前去，避免排隊人潮。</li>
+                    <li><strong>Baan Phadthai（米其林推薦）：：</strong>高級版泰式炒河粉，用料講究，裝潢優雅，靠近 Charoen Krung Soi 44，適合午後小憩或晚餐。</li>
+                    <li><strong>Jok Prince（米其林推薦）：：</strong>傳統泰式皮蛋瘦肉粥，帶有獨特煙燻味，早餐或傍晚都適合，當地人常客。</li>
+                    <li><strong>Sweettime（甜品攤）：：</strong>銀耳蓮子、椰奶西米露等泰式甜湯，可自選配料，非常受歡迎的小吃車。</li>
+                    <li><strong>泰式炸香蕉／芋頭餅（沿街攤販）：：</strong>外酥內軟，小袋裝走邊吃邊逛街正合適。</li>
+                    <li><strong>咖啡與文青小店推薦：</strong>
+                        <ul class="list-circle list-inside ml-4">
+                            <li>Factory Coffee x Blue Whale Cafe（兩家風格不同）：Factory 咖啡濃郁，裝潢工業風；Blue Whale 靠近 Wat Pho，藍色系特色咖啡很適合拍照。</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">SPA 推薦</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>Perception Blind Massage – Ratchadamri</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">住宿</h3>
+                <p class="text-gray-700 leading-relaxed">Sindhorn Midtown Hotel Bangkok, Vignette Collection, an IHG Hotel</p>
+            </div>
+        </section>
+
+        <!-- Day 10 行程 -->
+        <section id="day10" class="card">
+            <h2 class="text-3xl font-bold text-blue-700 section-title">Day 10: 8/24 (Sun)</h2>
+            <div class="mb-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">搭機時間</h3>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li><strong>航班：</strong>中華航空公司 CI832</li>
+                    <li><strong>起飛：：</strong>2025 年 8 月 24 日 13:20 素萬那普國際機場</li>
+                    <li><strong>抵達：：</strong>2025 年 8 月 24 日 18:00 桃園機場 T1</li>
+                    <li><strong>飛行時間：</strong>3小時40分</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 地圖區塊 (需要地圖 API 整合) -->
+        <section class="card bg-blue-50">
+            <h2 class="text-3xl font-bold text-blue-700 section-title">行程地圖</h2>
+            <div id="map"></div> <!-- 地圖將在此處顯示 -->
+            <script>
+                // 初始化地圖的函數
+                function initMap() {
+                    // 曼谷市中心座標
+                    const bangkok = { lat: 13.7563, lng: 100.5018 };
+                    // 建立地圖實例
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 12, // 縮放級別
+                        center: bangkok, // 中心點
+                    });
+
+                    // 飯店
+                    new google.maps.Marker({
+                        position: { lat: 13.7377, lng: 100.5407 }, // Sindhorn Midtown Hotel 大致座標
+                        map,
+                        title: "Sindhorn Midtown Hotel Bangkok",
+                        icon: { // 自訂圖標，讓飯店標記更明顯
+                            url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png", // 藍色圓點圖標
+                            scaledSize: new google.maps.Size(32, 32) // 調整圖標大小
+                        }
+                    });
+
+                    // Day 8 地點
+                    new google.maps.Marker({
+                        position: { lat: 13.7380, lng: 100.5470 }, // Saneh Jaan 大致座標
+                        map,
+                        title: "Saneh Jaan (米其林一星泰式料理)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7329, lng: 100.5487 }, // Café Tartine 大致座標
+                        map,
+                        title: "Café Tartine",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7320, lng: 100.5410 }, // BAAN LANGSUAN 大致座標
+                        map,
+                        title: "BAAN LANGSUAN",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7500, lng: 100.4910 }, // 大皇宮大致座標
+                        map,
+                        title: "大皇宮 (Grand Palace)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7470, lng: 100.4930 }, // 臥佛寺 (Wat Pho) 大致座標
+                        map,
+                        title: "臥佛寺 (Wat Pho)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7450, lng: 100.4890 }, // 鄭王廟 (Wat Arun) 大致座標
+                        map,
+                        title: "鄭王廟 (Wat Arun)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7465, lng: 100.5020 }, // Hong Sieng Kong 大致座標
+                        map,
+                        title: "Hong Sieng Kong (河畔咖啡廳)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7042, lng: 100.5028 }, // Asiatique 大致座標
+                        map,
+                        title: "Asiatique The Riverfront 碼頭夜市",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7230, lng: 100.5650 }, // Let's Relax Icon Siam (靠近 Icon Charoen Nakhon) 大致座標
+                        map,
+                        title: "Let's Relax (Icon Charoen Nakhon)",
+                    });
+
+                    // Day 9 地點
+                    new google.maps.Marker({
+                        position: { lat: 13.8010, lng: 100.5480 }, // Or Tor Kor 菜市場 大致座標
+                        map,
+                        title: "Or Tor Kor 菜市場",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.8037, lng: 100.5501 }, // Chatuchak 大致座標
+                        map,
+                        title: "Chatuchak Weekend Market (恰圖恰週末市集)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7317, lng: 100.5218 }, // 曼谷民俗博物館大致座標
+                        map,
+                        title: "曼谷民俗博物館 Bangkokian Museum",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7490, lng: 100.5000 }, // 石龍軍路中心點大致座標
+                        map,
+                        title: "石龍軍路 (Thanon Charoen Krung)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7530, lng: 100.4990 }, // ภูธร บาร์烤麵包 大致座標
+                        map,
+                        title: "ภูธร บาร์烤麵包",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7325, lng: 100.5235 }, // 朱拉50巷廚房 大致座標
+                        map,
+                        title: "朱拉50巷廚房",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7320, lng: 100.5230 }, // Prachak Roast Duck 大致座標
+                        map,
+                        title: "Prachak Roast Duck (百年烤鴨店)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7220, lng: 100.5130 }, // Sarnies Bangkok 大致座標
+                        map,
+                        title: "Sarnies Bangkok (咖啡與創意輕食)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7525, lng: 100.5005 }, // Thip Samai Pad Thai 大致座標
+                        map,
+                        title: "Thip Samai Pad Thai (石龍軍路延伸區)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7200, lng: 100.5120 }, // Baan Phadthai 大致座標
+                        map,
+                        title: "Baan Phadthai (米其林推薦)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7528, lng: 100.4995 }, // Jok Prince 大致座標
+                        map,
+                        title: "Jok Prince (米其林推薦)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7520, lng: 100.5000 }, // Sweettime 大致座標
+                        map,
+                        title: "Sweettime (甜品攤)",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7570, lng: 100.5360 }, // Factory Coffee 大致座標
+                        map,
+                        title: "Factory Coffee",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7460, lng: 100.4935 }, // Blue Whale Cafe 大致座標
+                        map,
+                        title: "Blue Whale Cafe",
+                    });
+                    new google.maps.Marker({
+                        position: { lat: 13.7440, lng: 100.5370 }, // Perception Blind Massage – Ratchadamri 大致座標
+                        map,
+                        title: "Perception Blind Massage – Ratchadamri",
+                    });
+
+                    // 您可以根據您的行程，添加更多地點的標記
+                }
+            </script>
+            <!-- 載入 Google Maps JavaScript API。請將 YOUR_API_KEY 替換為您的實際 API 金鑰 -->
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6ZqeZE-6InV32ZP27gZe7rQASVoyGYYE&callback=initMap"></script>
+        </section>
+
+        <!-- 更多餐廳資訊區塊 (可擴充) -->
+        <section class="card bg-green-50">
+            <h2 class="text-3xl font-bold text-green-700 section-title">更多餐廳資訊</h2>
+            <div class="text-gray-700 leading-relaxed">
+                <p>此區塊可擴充更多餐廳的詳細資訊，例如地址、營業時間、特色菜、預約方式等。</p>
+                <ul class="list-disc list-inside mt-4">
+                    <li><strong>Saneh Jaan:</strong> <a href="#" class="text-blue-600 hover:underline">查看詳細資訊</a></li>
+                    <li><strong>Thip Samai Pad Thai:</strong> <a href="#" class="text-blue-600 hover:underline">查看詳細資訊</a></li>
+                    <li><strong>Prachak Roast Duck:</strong> <a href="#" class="text-blue-600 hover:underline">查看詳細資訊</a></li>
+                    <!-- 更多餐廳... -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- 頁腳 -->
+        <footer class="text-center py-6 text-gray-600 text-sm">
+            <p>&copy; 2025 曼谷行程規劃。祝您旅途愉快！</p>
+        </footer>
+    </div>
+</body>
+</html>
